@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!" />
+            
+            <Button
+                android:id="@+id/try_button"
+                android:layout_below="@id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="EXTRACT"
+                android:textColor="#fff"
+                android:backgroundTint="#428ff4"/>
+
+            <Button
+                android:id="@+id/ussdbtn"
+                android:layout_below="@id/try_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TEST USSD"
+                android:textColor="#fff"
+                android:backgroundTint="#428ff4"/>
+
+            <ImageView
+                android:id="@+id/my_avatar"
+                android:layout_below="@+id/ussdbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
